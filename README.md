@@ -37,11 +37,11 @@ Este projeto consiste numa aplicação web desenvolvida em PHP com MySQL, destin
    git clone https://github.com/RobertoBatista28/Website_Reserva_Gestao_Salas.git
 
 2. Configure o ambiente no XAMPP:
-Copie os ficheiros para a dentro da pasta xampp.
-Inicie o Apache e MySQL no painel de controle do XAMPP.
+- Copie os ficheiros para a dentro da pasta xampp.
+- Inicie o Apache e MySQL no painel de controle do XAMPP.
 
 3. Configure a base de dados:
-Importe o ficheiro SQL fornecido para criar a estrutura da base de dados.
+- Importe o ficheiro SQL fornecido para criar a estrutura da base de dados.
 
 4. Configure o arquivo conexao.php com as credenciais da base de dados.
 
