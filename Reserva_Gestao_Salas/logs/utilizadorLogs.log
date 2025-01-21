@@ -1,0 +1,52 @@
+[2025-01-04 00:35:55] INFO: Sala nomeada '' foi eliminada pelo administrador ''.
+[2025-01-04 00:37:55] INFO: Sala com ID 79 foi eliminada pelo administrador .
+[2025-01-04 00:40:45] INFO: Sala com ID 78 foi eliminada pelo administrador ''.
+[2025-01-04 00:42:27] INFO: Sala com ID 76 foi eliminada pelo administrador ''.
+[2025-01-04 00:43:16] INFO: Sala com ID 75 foi eliminada pelo administrador ''.
+[2025-01-04 00:44:56] INFO: Sala com ID 74 foi eliminada pelo administrador ''.
+[2025-01-04 00:45:20] INFO: Sala com ID 73 foi eliminada pelo administrador ''.
+[2025-01-04 00:47:12] INFO: Sala com ID 72 foi eliminada pelo administrador ''.
+[2025-01-04 00:50:53] INFO: Sala com ID 71 foi eliminada pelo administrador '1'.
+[2025-01-04 00:55:11] INFO: Sala com ID 70 foi eliminada pelo administrador 'roberto'.
+[2025-01-04 03:17:35] INFO: Sala com ID 69 foi eliminada pelo administrador 'roberto'.
+[2025-01-04 03:17:42] INFO: Sala com ID 68 foi eliminada pelo administrador 'roberto'.
+[2025-01-04 03:18:56] INFO: Sala com ID 67 foi eliminada pelo administrador 'roberto'.
+[2025-01-04 03:21:35] INFO: Sala com ID 66 foi eliminada pelo administrador 'roberto'.
+[2025-01-04 04:28:18] INFO: Sala com ID 65 foi eliminada pelo administrador 'roberto'.
+[2025-01-04 20:51:12] INFO: Utilizador 'loosaz' reservou a sala '23' para o dia '2025-01-05' das 20:00 às 21:00.
+[2025-01-04 20:51:40] INFO: Utilizador 'loosaz' reservou a sala '23' para o dia '2025-01-05' das 18:00 às 20:00.
+[2025-01-04 20:51:51] INFO: Utilizador 'loosaz' reservou a sala '23' para o dia '2025-01-05' das 16:00 às 17:00.
+[2025-01-04 20:51:51] INFO: Utilizador 'loosaz' reservou a sala '23' para o dia '2025-01-05' das 22:00 às 23:00.
+[2025-01-04 20:57:29] INFO: Utilizador 'loosaz' tentou aceder à página de reservar sala sem especificar uma sala.
+[2025-01-04 20:59:14] INFO: Utilizador 'loosaz' tentou aceder à página de reservar sala sem especificar uma sala.
+[2025-01-04 21:00:43] INFO: Utilizador 'loosaz' tentou aceder à página de reservar sala sem especificar uma sala.
+[2025-01-04 21:04:13] INFO: Utilizador 'loosaz' tentou aceder à página de reservar sala com uma sala inexistente.
+[2025-01-04 21:04:18] INFO: Utilizador 'loosaz' tentou aceder à página de reservar sala com uma sala inexistente.
+[2025-01-04 21:04:24] INFO: Utilizador 'loosaz' tentou aceder à página de reservar sala com uma sala inexistente.
+[2025-01-04 21:05:15] INFO: Utilizador 'loosaz' tentou aceder à página de reservar sala da sala '64' que não está disponível.
+[2025-01-04 21:16:47] INFO: Utilizador 'roberto' tentou aceder à página de reservar sala com uma sala inexistente.
+[2025-01-04 21:20:31] INFO: Utilizador 'loosaz' eliminou a reserva com o ID 72.
+[2025-01-04 21:21:25] INFO: Utilizador 'loosaz' eliminou a reserva com o ID 76.
+[2025-01-04 21:22:56] INFO: Utilizador 'loosaz' eliminou a reserva com o ID '75'.
+[2025-01-04 21:23:00] INFO: Utilizador 'loosaz' eliminou a reserva com o ID '75'.
+[2025-01-04 21:23:29] INFO: Utilizador 'loosaz' eliminou a reserva com o ID '74'.
+[2025-01-04 21:25:50] INFO: Utilizador 'loosaz' eliminou a reserva com o ID '73'.
+[2025-01-04 21:28:32] INFO: Utilizador 'loosaz' eliminou a reserva com o ID '77'.
+[2025-01-04 23:26:19] INFO: Utilizador 'loosaz' tentou editar a reserva com o ID '68' de outro utilizador.
+[2025-01-04 23:29:00] INFO: Utilizador 'roberto' tentou editar a reserva com o ID '68' que pertence a outro utilizador.
+[2025-01-04 23:30:08] INFO: Utilizador 'roberto' tentou editar a reserva com o ID '68' que pertence a outro utilizador.
+[2025-01-04 23:37:37] INFO: Utilizador 'roberto' tentou editar a reserva com o ID '68' que pertence a outro utilizador.
+[2025-01-04 23:42:09] INFO: Utilizador 'roberto' tentou aceder à página de reservar sala sem especificar a sala.
+[2025-01-04 23:48:28] INFO: Utilizador 'loosaz' tentou reservar mais de um horário separados por horas na reserva com o ID '77'.
+[2025-01-04 23:50:52] INFO: Utilizador 'loosaz' tentou editar a reserva com o ID '77' com mais de um horário separado por horas.
+[2025-01-04 23:51:01] INFO: Utilizador 'loosaz' editou a reserva com o ID '77'.
+[2025-01-04 23:51:35] INFO: Utilizador 'loosaz' editou a reserva com o ID '77' para o horário 22:00 - 23:00.
+[2025-01-04 23:51:50] INFO: Utilizador 'loosaz' editou a reserva com o ID '77' para o horário 21:00 - 23:00.
+[2025-01-04 23:53:58] INFO: Utilizador 'loosaz' tentou aceder à página de reservar sala sem especificar a sala ou idReserva.23
+[2025-01-04 23:54:54] INFO: Utilizador 'loosaz' tentou aceder à página de reservar sala sem especificar a sala ou idReserva.23
+[2025-01-04 23:58:22] INFO: Utilizador 'loosaz' tentou aceder à página de editar sala sem especificar o idSala ('23') ou idReserva ('').
+[2025-01-05 00:01:57] INFO: Utilizador 'loosaz' tentou aceder à página de editar reserva a partir de um idSala inválido ('230').
+[2025-01-05 00:06:11] INFO: Utilizador 'loosaz' tentou editar a reserva com o ID '76' que é passada ou cancelada.
+[2025-01-05 03:20:00] INFO: Utilizador 'loosaz' reservou a sala com ID '23' para o dia '2025-01-06' das 17:00 às 18:00.
+[2025-01-05 03:28:56] INFO: Utilizador 'loosaz' reservou a sala com ID '23' para o dia '2025-01-06' das 07:00 às 20:00.
+[2025-01-06 20:23:41] INFO: Utilizador 'miguel' reservou a sala com ID '24' para o dia '2025-01-07' das 12:00 às 13:00.
