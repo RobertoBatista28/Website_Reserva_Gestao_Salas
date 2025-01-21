@@ -1,0 +1,128 @@
+/* ==================== Globals ==================== */
+:root {
+    --primary-color: #C94D24;
+    --primary-light: #e65d2e;
+    --primary-dark: #a33d1c;
+    --text-color: #2d3748;
+    --background-color: #f7f7f7;
+    --card-background: #ffffff;
+    --border-color: #e2e8f0;
+}
+
+/* ==================== General Reset ==================== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', system-ui, sans-serif;
+}
+
+/* ==================== Body ==================== */
+body {
+    background: var(--background-color);
+    color: var(--text-color);
+    margin: 0;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: url('../media/background.png') no-repeat center center;
+    background-size: cover;
+}
+
+/* ==================== Header ==================== */
+h1 {
+    color: var(--card-background);
+    font-size: 2rem;
+    margin-bottom: 20px;
+    text-align: center;
+    width: 100%;
+}
+
+/* ==================== Form Container ==================== */
+form {
+    background: var(--card-background);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 500px;
+    border: 1px solid var(--border-color);
+}
+
+/* ==================== Label ==================== */
+label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: var(--text-color);
+}
+
+/* ==================== Form Inputs ==================== */
+input,
+select,
+textarea,
+button {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid var(--border-color);
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+/* ==================== Focus States ==================== */
+input:focus,
+select:focus,
+textarea:focus {
+    outline: none;
+    border-color: var(--primary-light);
+    box-shadow: 0 0 5px rgba(201, 77, 36, 0.5);
+}
+
+/* ==================== Button ==================== */
+button {
+    background: var(--primary-color);
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+/* ==================== Button Hover ==================== */
+button:hover {
+    background: var(--primary-dark);
+}
+
+/* ==================== Paragraphs ==================== */
+p {
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+/* ==================== Error and Success Messages ==================== */
+p[style*="color: red"] {
+    color: red;
+    font-weight: bold;
+}
+
+p[style*="color: green"] {
+    color: green;
+    font-weight: bold;
+}
+
+/* ==================== Links ==================== */
+a {
+    display: block;
+    text-align: center;
+    margin-top: 5px;
+    text-decoration: none;
+    color: var(--text-color);
+    transition: color 0.3s;
+}
+
+a:hover {
+    color: var(--primary-light);
+}

@@ -1,0 +1,61 @@
+:root {
+    --primary-color: #ff6b6b;
+    --text-color: #333;
+    --background-color: #f9f9f9;
+    --button-color: #4caf50;
+    --button-hover-color: #45a049;
+}
+
+body {
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: var(--background-color);
+    color: var(--text-color);
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Garante que o body ocupe toda a altura da página */
+}
+
+header {
+    flex-shrink: 0; /* Garante que o header não seja redimensionado */
+}
+
+.error-container {
+    margin: auto; /* Centraliza o container horizontalmente e verticalmente */
+    text-align: center;
+    max-width: 600px; /* Limita a largura máxima do container */
+    padding: 2rem;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.error-code {
+    font-size: 4rem;
+    font-weight: bold;
+    color: var(--primary-color);
+}
+
+.error-message {
+    font-size: 1.5rem;
+    margin: 1rem 0;
+}
+
+.error-actions {
+    margin-top: 2rem;
+}
+
+.error-actions a {
+    text-decoration: none;
+    color: #fff;
+    background-color: var(--button-color);
+    padding: 0.75rem 1.5rem;
+    border-radius: 5px;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+}
+
+.error-actions a:hover {
+    background-color: var(--button-hover-color);
+}

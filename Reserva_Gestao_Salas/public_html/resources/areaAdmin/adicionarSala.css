@@ -1,0 +1,137 @@
+/* ==================== Globals ==================== */
+:root {
+    --primary-color: #C94D24;
+    --primary-light: #e65d2e;
+    --primary-dark: #a33d1c;
+    --text-color: #2d3748;
+    --background-color: #f7f7f7;
+    --card-background: #ffffff;
+    --border-color: #e2e8f0;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', system-ui, sans-serif;
+}
+
+html {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url('../media/background.png') no-repeat center center;
+    background-size: cover;
+}
+
+/* ==================== Container ==================== */
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* altura da tela */
+    width: 100%;   /* largura 100% */
+    padding: 20px;
+}
+
+/* ==================== Sala Box ==================== */
+.sala-box {
+    background-color: var(--card-background);
+    padding: 30px;
+    border-radius: 8px;
+    width: 150%;
+    max-width: 500px; /* largura máxima */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    margin-left: -25%;
+    margin-right: -25%;
+}
+
+h1 {
+    color: var(--primary-color);
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+
+/* ==================== Form ==================== */
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin-top: 15px;
+    font-weight: bold;
+    color: var(--text-color);
+    text-align: left;
+}
+
+input,
+select,
+textarea {
+    padding: 10px;
+    margin-top: 8px;
+    font-size: 14px;
+    border-radius: 5px;
+    border: 1px solid var(--border-color);
+    transition: border-color 0.3s;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+    border-color: var(--primary-color);
+    outline: none;
+}
+
+textarea {
+    resize: vertical;
+    min-height: 100px;
+}
+
+/* ==================== Buttons ==================== */
+button {
+    padding: 12px;
+    margin-top: 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: none;
+    background-color: var(--primary-color);
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+button:hover {
+    background-color: var(--primary-dark);
+    transform: scale(1.05);
+}
+
+/* ==================== Feedback Messages ==================== */
+p {
+    font-weight: bold;
+    margin-top: 15px;
+}
+
+p[style*="color:lightgreen"] {
+    color: lightgreen;
+}
+
+p[style*="color:red"] {
+    color: red;
+}
+
+/* ==================== Links ==================== */
+a {
+    display: block;
+    text-align: center;
+    margin-top: 5px;
+    text-decoration: none;
+    color: var(--text-color);
+    transition: color 0.3s;
+}
+
+a:hover {
+    color: var(--primary-light);
+}

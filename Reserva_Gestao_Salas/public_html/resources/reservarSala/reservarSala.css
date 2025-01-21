@@ -1,0 +1,156 @@
+/* ==================== Globals ==================== */
+:root {
+  --primary-color: #c94d24;
+  --primary-light: #e65d2e;
+  --primary-dark: #a33d1c;
+  --text-color: #2d3748;
+  --background-color: #f7f7f7;
+  --card-background: #ffffff;
+  --border-color: #e2e8f0;
+  --border-radius: 0.375rem;
+  --shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  --padding: 1rem;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", system-ui, sans-serif;
+}
+
+body {
+  background-color: var(--background-color);
+  color: var(--text-color);
+  line-height: 1.5;
+}
+
+/* ==================== Layout ==================== */
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  padding: 2rem;
+  justify-content: space-between;
+}
+
+.card {
+  background-color: var(--card-background);
+  border: 1px solid var(--border-color);
+  padding: var(--padding);
+  box-shadow: var(--shadow);
+  border-radius: var(--border-radius);
+}
+
+/* ==================== Room Details ==================== */
+.room-details {
+  flex: 1 1 45%;
+  max-width: 600px;
+}
+
+.room-details h1 {
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.image-container img {
+  width: 100%;
+  max-width: 600px;
+  border-radius: var(--border-radius);
+}
+
+.info p {
+  margin: 0.5rem 0;
+}
+
+.info strong {
+  color: var(--primary-color);
+}
+
+/* ==================== Reservations ==================== */
+.reservations {
+  flex: 1 1 50%;
+  overflow-x: auto;
+}
+
+.date-picker {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.date-picker input {
+  padding: 0.5rem;
+  font-size: 1rem;
+  margin-bottom: 1rem;
+  border: 1px solid var(--border-color);
+  border-radius: var(--border-radius);
+  width: 100%;
+}
+
+/* ==================== Time Table ==================== */
+.time-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 0.5rem;
+  margin-bottom: 1rem;
+  background-color: var(--card-background);
+  border: 1px solid var(--border-color);
+  table-layout: fixed; /* Garante que todas as colunas tenham tamanho fixo */
+}
+
+.time-table th,
+.time-table td {
+  padding: 0.5rem;
+  text-align: center;
+  border-bottom: 1px solid var(--border-color);
+  height: 2.5rem;
+  overflow: hidden; /* Impede que o texto extrapole */
+  text-overflow: ellipsis; /* Adiciona reticências se o texto for muito longo */
+  white-space: nowrap; /* Impede quebra de linha */
+}
+
+.time-table th {
+  background-color: var(--primary-color);
+  color: #fff;
+}
+
+.time-table td {
+  color: var(--text-color);
+}
+
+.time-table th:nth-child(1),
+.time-table td:nth-child(1) {
+  width: 25%; /* Define largura fixa para a coluna de Hora */
+}
+
+.time-table th:nth-child(2),
+.time-table td:nth-child(2) {
+  width: 50%; /* Define largura fixa para a coluna de Disponibilidade */
+}
+
+.time-table th:nth-child(3),
+.time-table td:nth-child(3) {
+  width: 25%; /* Define largura fixa para a coluna de Ação */
+}
+
+.time-table input[type="checkbox"] {
+  transform: scale(1.2);
+  margin: 0;
+}
+
+/* ==================== Buttons ==================== */
+.btn {
+  background-color: var(--primary-color);
+  color: #fff;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: var(--border-radius);
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.btn:hover {
+  background-color: var(--primary-light);
+}
+

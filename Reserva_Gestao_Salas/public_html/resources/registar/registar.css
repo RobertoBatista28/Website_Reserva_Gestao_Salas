@@ -1,0 +1,110 @@
+/* ==================== Globals ==================== */
+:root {
+    --primary-color: #C94D24;
+    --primary-light: #e65d2e;
+    --primary-dark: #a33d1c;
+    --text-color: #2d3748;
+    --background-color: #f7f7f7;
+    --card-background: #ffffff;
+    --border-color: #e2e8f0;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', system-ui, sans-serif;
+}
+
+html {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url('../media/background.png') no-repeat center center;
+    background-size: cover;
+}
+
+/* ==================== Container ==================== */
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 500px;
+    width: 500px;
+}
+
+/* ==================== Register Box ==================== */
+.register-box {
+    background-color: var(--card-background);
+    padding: 20px;
+    border-radius: 8px;
+    width: 100%;
+    max-width: 400px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+h1 {
+    color: var(--primary-color);
+    font-size: 36px;
+}
+
+/* ==================== Form ==================== */
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin-top: 10px;
+    font-weight: bold;
+    color: var(--text-color);
+    text-align: left;
+}
+
+input {
+    padding: 8px;
+    margin-top: 5px;
+    font-size: 14px;
+    border-radius: 5px;
+    border: 1px solid var(--border-color);
+    transition: border-color 0.3s;
+}
+
+input:focus {
+    border-color: var(--primary-color);
+    outline: none;
+}
+
+/* ==================== Buttons ==================== */
+button {
+    padding: 10px;
+    margin-top: 15px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: none;
+    background-color: var(--primary-color);
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+button:hover {
+    background-color: var(--primary-dark);
+    transform: scale(1.05);
+}
+
+
+/* ==================== Links ==================== */
+p {
+    margin-top: 15px;
+    color: red;
+    font-size: 16px;
+}
+
+.g-recaptcha {
+    margin-top: 15px;
+    display: flex;
+    justify-content: center;
+}

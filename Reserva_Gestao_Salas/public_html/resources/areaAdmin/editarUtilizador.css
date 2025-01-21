@@ -1,0 +1,146 @@
+/* ==================== Globals ==================== */
+:root {
+  --primary-color: #c94d24;
+  --primary-light: #e65d2e;
+  --primary-dark: #a33d1c;
+  --text-color: #2d3748;
+  --background-color: #f7f7f7;
+  --card-background: #ffffff;
+  --border-color: #e2e8f0;
+}
+
+/* ==================== General Reset ==================== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", system-ui, sans-serif;
+}
+
+/* ==================== Body ==================== */
+body {
+  background: var(--background-color) url("../media/background.png") no-repeat
+    center center;
+  background-size: cover;
+  color: var(--text-color);
+  margin: 0;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+/* ==================== Container ==================== */
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+/* ==================== Register Box ==================== */
+.register-box {
+  background: var(--card-background);
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 500px;
+  border: 1px solid var(--border-color);
+}
+
+/* ==================== Header ==================== */
+h1 {
+  color: var(--primary-color);
+  font-size: 2rem;
+  margin-bottom: 20px;
+  text-align: center;
+  width: 100%;
+}
+
+/* ==================== Form Elements ==================== */
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+a {
+  display: block;
+  text-align: center;
+  margin-top: 5px;
+  text-decoration: none;
+  color: var(--text-color);
+  transition: color 0.3s;
+}
+
+a:hover {
+  color: var(--primary-light);
+}
+
+/* ==================== Imagem de Perfil ==================== */
+.imagemPerfil {
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.imagemPerfil img {
+  border-radius: 50%;
+  object-fit: cover;
+  width: 180px;
+  height: 180px;
+}
+
+/* ==================== Labels ==================== */
+label {
+  margin-bottom: 5px;
+  font-weight: bold;
+  color: var(--text-color);
+}
+
+/* ==================== Inputs, Select, and Buttons ==================== */
+input,
+select,
+button {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid var(--border-color);
+  border-radius: 5px;
+  font-size: 1rem;
+}
+
+/* ==================== Input Focus ==================== */
+input:focus,
+select:focus {
+  outline: none;
+  border-color: var(--primary-light);
+  box-shadow: 0 0 5px rgba(201, 77, 36, 0.5);
+}
+
+/* ==================== Button ==================== */
+button {
+  background: var(--primary-color);
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+/* ==================== Button Hover ==================== */
+button:hover {
+  background: var(--primary-dark);
+}
+
+/* ==================== Error and Success Messages ==================== */
+p[style*="color: red"] {
+  color: red;
+  font-weight: bold;
+}
+
+p[style*="color: green"] {
+  color: green;
+  font-weight: bold;
+}

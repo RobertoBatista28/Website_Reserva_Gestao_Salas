@@ -1,0 +1,235 @@
+/* ==================== Globals ==================== */
+:root {
+  --primary-color: #c94d24;
+  --primary-light: #e65d2e;
+  --primary-dark: #a33d1c;
+  --text-color: #2d3748;
+  --background-color: #f7f7f7;
+  --card-background: #ffffff;
+  --border-color: #e2e8f0;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", system-ui, sans-serif;
+}
+
+body {
+  background-color: var(--background-color);
+  color: var(--text-color);
+  line-height: 1.5;
+}
+
+/* ==================== Dropdown ==================== */
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-select {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #f9f9f9;
+  cursor: pointer;
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+}
+
+.dropdown-select:focus {
+  outline: none;
+  border-color: #007bff;
+  background-color: #e9ecef;
+}
+
+.dropdown-select option {
+  padding: 10px;
+  background-color: #fff;
+  color: #333;
+}
+
+/* ==================== Container ==================== */
+.container {
+  max-width: 1200px;
+  margin: 2rem auto;
+  padding: 0 1.5rem;
+}
+
+h1 {
+  text-align: center;
+  color: var(--primary-dark);
+}
+
+p {
+  margin: 0.6rem 0;
+  color: var(--text-color);
+  font-weight: bold;
+  font-size: 1.4rem;
+}
+
+/* ==================== Filters ==================== */
+.filters-container {
+  margin-bottom: 1rem;
+  width: 101%;
+}
+.filters {
+  display: flex;
+  flex-direction: column;
+}
+
+.filter-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.filter-item,
+.date-filter,
+.filter-item select {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+  width: calc(25% - 1rem);
+}
+
+.filter-item label,
+.date-filter label {
+  font-size: 0.875rem;
+  color: var(--text-color);
+}
+
+.filter-item input,
+.date-filter input,
+.filter-item select {
+  padding: 0.5rem;
+  font-size: 1rem;
+  border: 1px solid var(--border-color);
+  border-radius: 0.375rem;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.filter-item input,
+.date-filter input,
+.filter-item select {
+  max-width: 100%;
+  width: 100%;
+  min-width: 120px;
+}
+
+.filter-buttons {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 1rem;
+  width: auto;
+  margin-top: 1rem;
+}
+
+.filter-buttons button {
+  font-size: 0.875rem;
+  padding: 0.5rem 1rem;
+  border: 1px solid var(--border-color);
+  border-radius: 0.375rem;
+  cursor: pointer;
+  background-color: var(--button-bg-color);
+  color: var(--button-text-color);
+}
+
+/* ==================== Table ==================== */
+.reserva-table {
+  margin-top: 2rem;
+}
+
+.reserva-table table {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: var(--card-background);
+  border: 1px solid var(--border-color);
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.reserva-table th,
+.reserva-table td {
+  padding: 1rem;
+  text-align: left;
+  border-bottom: 1px solid var(--border-color);
+}
+
+.reserva-table th {
+  background-color: var(--primary-color);
+  color: white;
+}
+
+.reserva-table td {
+  color: var(--text-color);
+}
+
+/* ==================== Buttons ==================== */
+.btn,
+.btn-secondary,
+button[type="submit"] {
+  display: inline-block;
+  padding: 0.5rem;
+  border-radius: 0.375rem;
+  font-size: 0.875rem;
+  transition: background-color 0.3s ease;
+  text-decoration: none;
+  border: none;
+  cursor: pointer;
+}
+
+.btn {
+  background-color: var(--primary-color);
+  color: white;
+}
+
+.btn:hover {
+  background-color: var(--primary-light);
+}
+
+.btn-secondary {
+  background-color: #f3f4f6;
+  color: var(--text-color);
+}
+
+.btn-secondary:hover {
+  background-color: #e5e7eb;
+}
+
+button[type="submit"] {
+  background-color: var(--primary-color);
+  color: white;
+  font-weight: bold;
+}
+
+button[type="submit"]:hover {
+  background-color: var(--primary-light);
+}
+
+.button-aplicar {
+  display: flex; /* Use flex para permitir o alinhamento do botão */
+  width: 100%; /* Garante que o botão ocupe a largura total do container */
+}
+
+.button-aplicar button {
+  width: 23.5%; /* O botão vai ocupar toda a largura do container */
+  padding: 0.4rem;
+  font-size: 1rem; /* Aumenta o tamanho da fonte */
+  border-radius: 0.5rem; /* Deixa os cantos mais arredondados */
+  background-color: var(--primary-color); /* Cor de fundo */
+  color: white; /* Cor do texto */
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.button-aplicar button:hover {
+  background-color: var(--primary-light); /* Cor de fundo ao passar o mouse */
+}
+
