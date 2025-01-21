@@ -47,5 +47,30 @@ Este projeto consiste numa aplicação web desenvolvida em PHP com MySQL, destin
 
 5. s
 
+## Estrutura do Projeto
+```
+Reserva_Gestao_Salas/
+├── config/
+│   └── ...
+├── logs/
+│   └── ...
+├── public_html/
+│   ├── resources/
+│   │   ├── areaAdmin/
+│   │   ├── header/
+│   │   ├── login/
+│   │   └── media/
+│   │   └── perfil/
+│   │   └── recuperarPassword/
+│   │   └── registar/
+│   │   └── reservarSala/
+│   │   └── ...
+│   ├── vendor/
+│   │   ├── composer/
+│   │   └── phpmailer/
+│   └── ...
+└── ... 
+```
+
 ## Licença
 Este projeto é apenas para uso académico e não está licenciado para uso comercial.
