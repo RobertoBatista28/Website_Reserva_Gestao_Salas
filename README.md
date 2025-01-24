@@ -1,4 +1,4 @@
-# Website_Reserva_Gestao_Salas
+# Website de Reservas e Gestao de Salas
 Este projeto consiste numa aplicação web desenvolvida em PHP com MySQL, destinada à reserva e gestão de salas. Este projeto foca-se em segurança e eficiência, garantindo uma experiência de utilizador robusta e protegida.
 
 ## Funcionalidades
